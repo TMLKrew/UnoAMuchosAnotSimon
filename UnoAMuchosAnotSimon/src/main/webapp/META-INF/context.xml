@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" docBase="unoamuchosanotsimon" path="/unoAMuchosAnotSimon">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/UAU" password="2018" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/cursohibernate" username="java2018"/>
+</Context>

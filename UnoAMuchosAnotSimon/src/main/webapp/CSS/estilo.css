@@ -1,0 +1,149 @@
+@CHARSET "UTF-8";
+body {
+    font-family: Verdana;	
+    font-size: 1em;
+}
+div#principal {
+    width: 50%;
+    position: relative;
+    float: left;
+    left: 25%;
+    border: 2px solid blue;
+    padding-bottom: 15px;
+    margin-top: 50px;
+}
+div#principal h2 {
+    font-size: 1.1em;
+    text-align: center;
+    color: blue;
+}
+div#principal div#secundario {
+    width: 40%;
+    position: relative;
+    float: left;
+    left: 40%;
+}
+fieldset {
+    width: 50%; 
+    border: none;
+}
+legend {
+    font-style: italic; 
+    font-size: .9em; 
+    color: blue; 
+}
+table#listado {
+    position: relative; 
+    left: 25%; 
+    width: 50%; 
+
+} 
+table#listado td {
+    text-align: left;
+
+}
+div.error {
+    width: 60%;
+    position: relative;
+    float: left;
+    left: 20%;
+    text-align: center;
+    color: red;
+    border: 3px groove red;    
+}
+h3 {
+    font-style: italic;
+    font-size: .9em;
+    text-align: center;
+}
+h3.error, p.error, h4.error div.error{
+    color: red;
+    text-align: center;
+}
+h3.normal {
+    color: green;
+
+}
+h3.aviso {
+    color: orange;
+
+}
+div.codigo {
+    border-bottom: 2px ridge blue;
+}
+div.codigo input {
+    color: red;
+    border: none;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+h2 {
+    text-align: center;
+}
+div.flotante {
+    width: 30%;
+    position: relative;
+    float: left;
+    borber: none;
+}
+p.boton {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
+}
+ol a, a {
+    text-decoration: none;
+}
+p#volver {
+    text-align: center;
+}
+input.boton {
+    font-size: 1em;
+    font-family: verdana;
+}
+div#principal table {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    margin-top: 10px;
+}
+caption {
+    font-size: .9em;
+    font-style: italic;
+}
+div#principal table th {
+    font-weight: normal;
+    background-color: blue;
+    color: white;
+    text-align: left;
+}
+div#principal table td, div#principal table th {
+    border-collapse: separate;
+    border: 1px solid cyan;
+}
+div.resuelto {
+    display: none;
+    margin: 10px 0px;
+    
+}
+li ol {
+    list-style-type: lower-latin;
+}
+a.enlace {
+    cursor: pointer;
+    text-align: center;
+}
+div#principal ol#inicial {
+    margin-left: 150px;
+}
+div#principal div.mv {
+    text-align: center;
+}
+td.centro {
+    text-align: center;
+}
+div#principal div.b1, div#principal div.b2 {
+    float: left;
+    width: 50%;
+    text-align: center;
+}

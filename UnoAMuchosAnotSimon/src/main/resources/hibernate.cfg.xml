@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!-- Configuración de Hibernate -->
+<hibernate-configuration>
+  <!-- Para establecer la conexión a la BD y manejarla. Pueden existir varias, una por cada BD -->
+  <session-factory>
+    <!-- Variante SQL que usa la BD para ejecutar querys, dialecto -->
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <!-- Para mostrar el resultado de cada operación realizada, valor true -->
+    <property name="hibernate.show_sql">true</property>
+    <property name="format_sql">true</property>
+    <!-- Conexión directa -->
+    <property name="hibernate.connection.datasource">java:comp/env/jdbc/UAU</property>
+    <!-- Autogeneración de tablas "al vuelo" en el caso de que no existieran. Posibles valores:
+                validate: valida el esquema de la BD pero sin realizar cambios en la información
+                update: sólo actualiza la BD una vez que ha sido creado el esquema
+                create: borra el esquema existente y crea uno nuevo
+                create-drop: crea una nueva BD y la elimina cuando SessionFactory es destruida -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <!-- Pool de conexiones -->
+    <!-- <property name="hibernate.connection.datasource">java:comp/env/jdbc/UAU</property> -->
+    <!-- Persistencia de la entidades como tablas en la BD. Mediante ficheros XML de configuración en el directorio scr/main/resources/ -->
+    <mapping class="es.albarregas.beans.Libro"/>
+    <mapping class="es.albarregas.beans.Persona"/>
+
+  </session-factory>
+</hibernate-configuration>
